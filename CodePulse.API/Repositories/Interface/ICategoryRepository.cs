@@ -5,5 +5,7 @@ namespace CodePulse.API.Repositories.Interface
     public interface ICategoryRepository
     {
         Task<Category> CraeteAsync(Category category);
+
+        Task<IEnumerable<Category>> GetAllAsync();
     }
 }
